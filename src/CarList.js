@@ -53,12 +53,14 @@ const CarList = () => {
            (!filters.minFiyat || carPrice >= parseFloat(filters.minFiyat)) &&
            (!filters.maxFiyat || carPrice <= parseFloat(filters.maxFiyat));
   });
+
+  
   
 
 
   return (
     <div className="car-list-container">
-      <h1 style={{textAlign: "center", marginTop: "50px"}}>NitroAZE</h1>
+      <h1 style={{textAlign: "center"}}>NitroAZE</h1>
 
       {/* Filtreleme Formu */}
       <form className="form-container">
@@ -94,24 +96,30 @@ const CarList = () => {
 
       <div className="car-grid">
         {filteredCars.map(car => (
-          <div className="car-card" key={car.id}>
-            <Link to={`/car/${car.id}`} style={{ textDecoration: 'none' }}>
-              <img src={"https://www.topgear.com/sites/default/files/2022/08/1-Mercedes-McLaren-SLR.jpg"} alt={car.name} />
-              <h2>{car.name}</h2>
-              <p>Model: {car.car_model}</p>
-              <p>Color: {car.car_color}</p>
-              <p>Year: {car.car_model_year}</p>
-              <p>VIN: {car.car_vin}</p>
-              <p>Price: {car.price}</p>
-              <p>Availability: {car.availability ? 'Available' : 'Not available'}</p>
-            </Link>
-            <button
-              className={`car-card-like ${car.isLiked ? 'liked' : ''}`}
-              onClick={() => toggleLike(car.id)}
-            >
-              <FaHeart />
-            </button>
-          </div>
+        // ...
+
+<div className="car-card" key={car.id}>
+  <Link to={`/car/${car.id}`} style={{ textDecoration: 'none' }}>
+    <img src={"https://www.topgear.com/sites/default/files/2022/08/1-Mercedes-McLaren-SLR.jpg"} alt={car.name} />
+    <h2>{car.name}</h2>
+    <p>Model: {car.car_model}</p>
+    <p>Color: {car.car_color}</p>
+    <p>Year: {car.car_model_year}</p>
+    <p>VIN: {car.car_vin}</p>
+    <p>Price: {car.price}</p>
+    <p>Availability: {car.availability ? 'Available' : 'Not available'}</p>
+  </Link>
+  {/* Butonu buraya taşıyın */}
+  <button
+    className={`car-card-like ${car.isLiked ? 'liked' : ''}`}
+    onClick={() => toggleLike(car.id)}
+  >
+    <FaHeart />
+  </button>
+</div>
+
+// ...
+
         ))}
       </div>
     </div>
