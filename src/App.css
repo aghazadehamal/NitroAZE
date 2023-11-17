@@ -1,5 +1,5 @@
 .car-list-container {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   padding: 20px;
 }
 
@@ -12,14 +12,14 @@
 
 .car-card {
   width: 300px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
   overflow: hidden;
 }
 
 .car-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .car-card img {
@@ -32,16 +32,14 @@
   border: none;
   cursor: pointer;
   font-size: 24px;
-  /* position: absolute; */ /* Bu satırı kaldırın */
-  /* top: 10px; */        /* Bu satırı kaldırın */
-  /* right: 10px; */      /* Bu satırı kaldırın */
 }
 
 .car-card-like.liked {
   color: red;
 }
 
-.car-card h2, .car-card p {
+.car-card h2,
+.car-card p {
   padding: 0 16px;
 }
 
@@ -57,7 +55,6 @@
   font-size: 18px;
 }
 
-/* Formun genel stilini ayarla */
 .form-container {
   display: flex;
   gap: 10px;
@@ -65,17 +62,16 @@
   justify-content: center;
 }
 
-/* İnput ve select elemanlarını stilize et */
-.input-field, .select-field {
+.input-field,
+.select-field {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
 }
 
-/* Buton için stil */
 .filter-button {
-  background-color: #ff5722; /* Oranj rengi buton için */
+  background-color: #ff5722;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -88,21 +84,11 @@
 }
 
 .filter-button:hover {
-  background-color: #e64a19; /* Butonun üzerine gelindiğinde daha koyu bir renk */
+  background-color: #e64a19;
 }
 
-/* Filtreleme formunun yanındaki yeni ilan butonu
-
-
-
-
-
-/* Diğer stil tanımlamalarınızı buraya ekleyin */
-
-/* CarDetails.css */
-
 .car-details-container {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   max-width: 750px;
   margin: 2rem auto;
   padding: 1rem;
@@ -117,14 +103,14 @@
 }
 
 .car-image-container {
-  text-align: center; /* Resmi ortalar */
-  margin: 20px 0; /* Biraz boşluk ekler */
+  text-align: center;
+  margin: 20px 0;
 }
 
 .car-image {
-  max-width: 100%; /* Konteynere sığdırmak için */
-  height: auto; /* Oranı korumak için */
-  border-radius: 4px; /* Kenarları yumuşatır */
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 
 .car-details {
@@ -147,13 +133,3 @@
   text-align: center;
   margin-top: 2rem;
 }
-
-
-
-
-
-
-
-
-
-
