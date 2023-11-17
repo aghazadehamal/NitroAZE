@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import RandomCenter from "./RandomCenter";
 
 const CarDetails = () => {
   const [car, setCar] = useState(null);
@@ -40,6 +41,16 @@ const CarDetails = () => {
           alt={`${car?.car_model} Image`}
           className="car-image"
         />
+
+<div class="custom-card">
+  <div class="card-content">
+    <p class="card-title">Avtomobil Qiyməti</p>
+    <p class="price">24.800 AZN</p>
+    <p class="buy-option">Hissə-hissə almaq</p>
+    <p class="phone">Telefon Nömrəsi: 022-222-22-22</p>
+  </div>
+</div>
+
       </div>
       <div className="car-details">
         <p>
@@ -62,6 +73,8 @@ const CarDetails = () => {
           {car?.availability ? "Available" : "Not available"}
         </p>
       </div>
+
+      <RandomCenter/>
     </div>
   );
 };

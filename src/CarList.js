@@ -56,7 +56,7 @@ const CarList = () => {
 
   return (
     <div className="car-list-container">
-      <h1 style={{ textAlign: "center" }}>NitroAZE</h1>
+      {/* <h1 style={{ textAlign: "center" }}>NitroAZE</h1> */}
 
       <form className="form-container">
         <select

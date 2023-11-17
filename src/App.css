@@ -87,19 +87,23 @@
   background-color: #e64a19;
 }
 
+/* carDetail */
+
 .car-details-container {
   font-family: "Arial", sans-serif;
-  max-width: 750px;
+  max-width: 1450px;
   margin: 2rem auto;
   padding: 1rem;
   border-radius: 8px;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .car-title {
   color: #333;
   text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .car-image-container {
@@ -108,9 +112,10 @@
 }
 
 .car-image {
-  max-width: 100%;
+  max-width: 85%;
   height: auto;
-  border-radius: 4px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .car-details {
@@ -121,15 +126,68 @@
   font-size: 1rem;
   line-height: 1.5;
   color: #666;
-  margin-left: 65px;
+  margin-left: 110px;
+  margin-bottom: 10px;
 }
 
 .car-details p strong {
   color: #333;
+  font-weight: bold;
 }
 
-.car-details-loading,
-.car-details-error {
+.custom-card {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
   text-align: center;
-  margin-top: 2rem;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.price {
+  font-size: 24px;
+  color: #007bff;
+  margin: 10px 0;
+}
+
+.buy-option {
+  font-size: 14px;
+  color: #28a745;
+  margin: 5px 0;
+}
+
+.phone {
+  font-size: 12px;
+  color: #333;
+  margin-top: 15px;
+}
+
+.app-title {
+  text-align: center;
+  color: #007bff;
+  font-size: 36px;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.app-container {
+  text-align: center;
+}
+
+.active-link {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #e64a19;
 }
